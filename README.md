@@ -1,8 +1,8 @@
 # Inteligencia Artificial Aplicada
 
-**Estudiante:** {tu nombre completo}
+**Estudiante:** {Ana Camila Salazar Baltazar}
 
-**Carrera:** {Arquitectura / Ingeniería en Ciberseguridad}
+**Carrera:** {Ingeniería en Ciberseguridad}
 
 **Cuatrimestre:** Primero
 
