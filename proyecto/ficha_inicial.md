@@ -2,28 +2,36 @@
 
 ## Problema
 
-{Qué ocurre hoy, a quién le ocurre y con qué frecuencia}
+{Los sistemas trabajan de manera independiente, lo cual retrasa la identificación de los incidentes y localización de los afectados por estos mismos, esto ocurre con residentes, oficinistas, Staff etc. cerca del 24% de todos los siniestros de fuego a nivel global causan más del 82% de las muertes en el mundo}
 
 ## Contexto
 
-{Dónde ocurre: tipo de organización, tamaño, herramientas que ya usan}
+{Edificios,Varía según el terreno y construcción, alarmas anti incendios}
 
 ## Usuarios afectados
 
-{Quién sufre el problema y quién usaría la solución. Pueden ser personas distintas}
+{Residentes,Oficinistas,Staff,Concurrentes etc.}
 
 ## Tipo de IA propuesto
 
-{Predictiva, generativa o agente. Justifica con lo que aprendiste en la Parte 2}
+{Agente IA, Bajo supervisión humana. El agente detectaría humo usando sensores, Analizaría la reacción de las personas usando el CCTV para encontrar la mejor reacción y con la supervisión humana ejecutar y registrar la validez del reporte}
 
 ## Qué dijeron los modelos
 
-{Resume en tres líneas lo que coincidió y lo que no entre ChatGPT, Gemini y Deepseek}
+{COINCIDIERON: 
+Agente IA Híbrido - ChatGPT & Gemini 
+Analizar entornos - ChatGPT, Gemini & DeepSeek
+Medidas de evacuación - Gemini & DeepSeek
+
+NO COINCIDIERON: 
+IA Predictiva - DeepSeek
+Ejecutar y Registrar - ChatGPT
+Ocupación por Hora - DeepSeek} 
 
 ## Primer riesgo identificado
 
-{Un riesgo ético, de privacidad o de seguridad que ya ves venir}
+{vigilancia permanente de ocupantes (ubicación, horarios, comportamientos) puede derivar en discriminación o control laboral}
 
 ## Qué NO va a hacer la solución
 
-{Delimita: una frase sobre lo que queda fuera}
+{NO es Anti Colapsos}
