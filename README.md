@@ -17,3 +17,4 @@
 - `proyecto/` — avances del proyecto integrador
 
 ## Declaración de uso de IA
+Se utilizó Claude para realizar el markdown, incluyendo ChatGPT, DeepSeek & Gemini. Según las instrucciones de los ejercicios. 
