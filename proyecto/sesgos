@@ -1,4 +1,4 @@
-# 🔥 Sesgos en Sistemas de Prevención y Detección de Incendios en Edificios Inteligentes
+#  Sesgos en Sistemas de Prevención y Detección de Incendios en Edificios Inteligentes
 
 | # | Sesgo | Descripción |
 |---|---|---|
@@ -10,6 +10,6 @@
 | 6 | **Evaluación** | Los sistemas suelen evaluarse con métricas generales de precisión y tiempo de respuesta en entornos controlados o pilotos (edificios nuevos, bien mantenidos), sin probarse suficientemente en condiciones reales adversas: edificios antiguos, fallas eléctricas simultáneas, clima extremo, o mantenimiento deficiente, que es donde realmente ocurren más incendios. |
 | 7 | **Despliegue** | Una vez implementado, el sistema puede usarse en contextos distintos a los previstos en el diseño (por ejemplo, un modelo entrenado para oficinas usado en una fábrica), o su mantenimiento y calibración continua depende de recursos económicos, por lo que edificios con menor presupuesto reciben actualizaciones y ajustes con menor frecuencia, ampliando la brecha de protección entre edificios ricos y pobres. |
 
-## 💡 En síntesis
+##  En síntesis
 
 > El riesgo central es que estos sesgos se combinan y refuerzan: los edificios que más necesitan protección temprana (antiguos, de bajos recursos, en regiones subrepresentadas en los datos) suelen ser precisamente los que reciben sistemas menos precisos, peor calibrados y menos actualizados —lo opuesto al objetivo original de *prevenir antes*.
