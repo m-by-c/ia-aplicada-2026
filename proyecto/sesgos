@@ -1,4 +1,19 @@
-# Sesgos en sistemas de prevención y detección de incendios en edificios inteligentes
+#  Sesgos en Sistemas de Prevención y Detección de Incendios en Edificios Inteligentes
+
+> Análisis basado en el marco clásico de sesgos en sistemas de datos/IA (histórico, representación, medición, agregación, aprendizaje, evaluación y despliegue) aplicado a la seguridad contra incendios en *smart buildings*.
+
+##  Tabla de contenidos
+
+- [Resumen](#-resumen)
+- [Tabla comparativa de sesgos](#-tabla-comparativa-de-sesgos)
+- [Idea central](#-idea-central)
+- [Fuentes](#-fuentes)
+
+##  Resumen
+
+Los sistemas modernos de prevención y detección de incendios combinan sensores multicriterio, inteligencia artificial y conectividad en la nube. Sin embargo, como cualquier sistema basado en datos, pueden arrastrar sesgos que afectan de forma desigual a distintos tipos de edificios.
+
+##  Tabla comparativa de sesgos
 
 | Tipo de sesgo | Dónde ocurre | Ejemplo en incendios en edificios inteligentes | Consecuencia |
 |---|---|---|---|
@@ -10,4 +25,15 @@
 | **Evaluación** | En las pruebas de desempeño del sistema | Se evalúa en pilotos con edificios nuevos y bien mantenidos | No se detectan fallos en condiciones reales adversas (edificios antiguos, mal mantenimiento) |
 | **Despliegue** | Al implementar el sistema en el mundo real | Modelo entrenado para oficinas se usa en una fábrica; mantenimiento depende del presupuesto | Uso fuera de contexto y brecha de actualización entre edificios ricos y pobres |
 
-**Idea central:** los sesgos se refuerzan entre sí — los edificios que más necesitan protección temprana (antiguos, de bajos recursos, subrepresentados) suelen recibir los sistemas menos precisos y peor mantenidos.
+##  Idea central
+
+> Los sesgos se refuerzan entre sí: los edificios que más necesitan protección temprana (antiguos, de bajos recursos, subrepresentados) suelen recibir los sistemas menos precisos y peor mantenidos.
+
+## Fuentes
+
+- [SFF Services — Sistemas contra incendios en 2026](https://www.sffservicesperu.com/sistemas-contra-incendios-en-2026/)
+- [Mancivent — Detección de Incendios en Edificios: Guía y Normativa 2026](https://mancivent.com/deteccion-de-incendios-en-edificios/)
+- [La Bodega del Instalador — Tecnologías que marcan el rumbo en 2026](https://www.labodegadelinstalador.net/tecnologias-que-estan-marcando-el-rumbo-de-los-sistemas-contra-incendio-en-2026/)
+- [Smart Building España — Tecnología de detección conectada para edificios autónomos](https://smartbuildingmag.es/news/111246-tecnolog%C3%ADa-de-detecci%C3%B3n-de-incendios-conectada-para-edificios-aut%C3%B3nomos)
+- [Drexmin — Tendencias tecnológicas en protección contra incendios en 2026](https://drexmin.es/tendencias-tecnologicas-en-proteccion-contra-incendios-en-2026/)
+- [SFF Services — 5 tendencias en sistemas contra incendios para empresas en 2026](https://www.sffservicesperu.com/tendencias-en-sistemas-contra-incendios-para-empresas-en-2026/)
