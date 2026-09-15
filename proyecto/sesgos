@@ -1,39 +1,15 @@
-#  Sesgos en Sistemas de Prevención y Detección de Incendios en Edificios Inteligentes
+# Sesgos en Sistemas de Prevención y Detección de Incendios en Edificios Inteligentes
 
-> Análisis basado en el marco clásico de sesgos en sistemas de datos/IA (histórico, representación, medición, agregación, aprendizaje, evaluación y despliegue) aplicado a la seguridad contra incendios en *smart buildings*.
+| # | Sesgo | Descripción |
+|---|---|---|
+| 1 | **Histórico** | Los datos con los que se entrenan los modelos de detección predictiva provienen de incendios y edificios del pasado, que reflejan condiciones estructurales, materiales de construcción y normativas ya superadas (o de ciertas regiones/países desarrollados). Si el histórico proviene mayormente de edificios comerciales de EE.UU. o Europa, el sistema puede no reconocer bien patrones de riesgo típicos de construcciones informales, materiales distintos o climas diferentes en otras regiones. |
+| 2 | **Representación** | Los edificios donde se instalan estos sistemas costosos (oficinas corporativas, centros comerciales de alto valor) no representan a todo el parque inmobiliario. Viviendas sociales, edificios antiguos o de bajos recursos quedan subrepresentados en los datos de entrenamiento, generando sistemas menos precisos —o simplemente ausentes— donde el riesgo de incendio suele ser mayor. |
+| 3 | **Medición** | Los sensores miden proxies del fuego (temperatura, partículas, humo, imagen térmica), no el incendio en sí. Un sensor mal calibrado, mal ubicado o de menor calidad (común en instalaciones económicas) puede subestimar sistemáticamente el riesgo en ciertas zonas, generando mediciones desiguales entre edificios "premium" y edificios estándar. |
+| 4 | **Agregación** | Combinar datos de edificios muy distintos (alturas, materiales, usos: industrial vs. residencial vs. oficina) en un solo modelo asume que todos responden igual a las mismas señales. Un modelo "promedio" puede funcionar mal en casos particulares —por ejemplo, cocinas industriales vs. oficinas— al tratarlos con el mismo criterio de alarma. |
+| 5 | **Aprendizaje** | Los algoritmos de IA optimizan para minimizar el error general (falsos positivos/negativos combinados), pero esa optimización puede priorizar reducir falsas alarmas en edificios con más datos históricos (los ya monitoreados intensivamente) a costa de perder sensibilidad en edificios con poca data previa, aunque sean más vulnerables. |
+| 6 | **Evaluación** | Los sistemas suelen evaluarse con métricas generales de precisión y tiempo de respuesta en entornos controlados o pilotos (edificios nuevos, bien mantenidos), sin probarse suficientemente en condiciones reales adversas: edificios antiguos, fallas eléctricas simultáneas, clima extremo, o mantenimiento deficiente, que es donde realmente ocurren más incendios. |
+| 7 | **Despliegue** | Una vez implementado, el sistema puede usarse en contextos distintos a los previstos en el diseño (por ejemplo, un modelo entrenado para oficinas usado en una fábrica), o su mantenimiento y calibración continua depende de recursos económicos, por lo que edificios con menor presupuesto reciben actualizaciones y ajustes con menor frecuencia, ampliando la brecha de protección entre edificios ricos y pobres. |
 
-##  Tabla de contenidos
+##  En síntesis
 
-- [Resumen](#-resumen)
-- [Tabla comparativa de sesgos](#-tabla-comparativa-de-sesgos)
-- [Idea central](#-idea-central)
-- [Fuentes](#-fuentes)
-
-##  Resumen
-
-Los sistemas modernos de prevención y detección de incendios combinan sensores multicriterio, inteligencia artificial y conectividad en la nube. Sin embargo, como cualquier sistema basado en datos, pueden arrastrar sesgos que afectan de forma desigual a distintos tipos de edificios.
-
-##  Tabla comparativa de sesgos
-
-| Tipo de sesgo | Dónde ocurre | Ejemplo en incendios en edificios inteligentes | Consecuencia |
-|---|---|---|---|
-| **Histórico** | En los datos usados para entrenar el sistema | Datos de incendios pasados provienen mayormente de edificios de regiones desarrolladas y normativas ya superadas | El sistema no reconoce bien riesgos de construcciones informales, otros materiales o climas |
-| **Representación** | En qué edificios se recogen los datos | Solo oficinas y centros comerciales de alto valor tienen sistemas instalados | Viviendas sociales o edificios antiguos quedan subrepresentados y peor protegidos |
-| **Medición** | En los sensores y proxies usados | Sensores de menor calidad o mal calibrados en instalaciones económicas | Subestimación sistemática del riesgo en edificios "no premium" |
-| **Agregación** | Al combinar datos de edificios distintos en un solo modelo | Un mismo modelo trata igual una cocina industrial y una oficina | Umbrales de alarma inadecuados para casos particulares |
-| **Aprendizaje** | En cómo el algoritmo optimiza su desempeño | El modelo prioriza reducir falsas alarmas en edificios con más historial de datos | Menor sensibilidad en edificios nuevos o poco monitoreados, aunque sean vulnerables |
-| **Evaluación** | En las pruebas de desempeño del sistema | Se evalúa en pilotos con edificios nuevos y bien mantenidos | No se detectan fallos en condiciones reales adversas (edificios antiguos, mal mantenimiento) |
-| **Despliegue** | Al implementar el sistema en el mundo real | Modelo entrenado para oficinas se usa en una fábrica; mantenimiento depende del presupuesto | Uso fuera de contexto y brecha de actualización entre edificios ricos y pobres |
-
-##  Idea central
-
-> Los sesgos se refuerzan entre sí: los edificios que más necesitan protección temprana (antiguos, de bajos recursos, subrepresentados) suelen recibir los sistemas menos precisos y peor mantenidos.
-
-## Fuentes
-
-- [SFF Services — Sistemas contra incendios en 2026](https://www.sffservicesperu.com/sistemas-contra-incendios-en-2026/)
-- [Mancivent — Detección de Incendios en Edificios: Guía y Normativa 2026](https://mancivent.com/deteccion-de-incendios-en-edificios/)
-- [La Bodega del Instalador — Tecnologías que marcan el rumbo en 2026](https://www.labodegadelinstalador.net/tecnologias-que-estan-marcando-el-rumbo-de-los-sistemas-contra-incendio-en-2026/)
-- [Smart Building España — Tecnología de detección conectada para edificios autónomos](https://smartbuildingmag.es/news/111246-tecnolog%C3%ADa-de-detecci%C3%B3n-de-incendios-conectada-para-edificios-aut%C3%B3nomos)
-- [Drexmin — Tendencias tecnológicas en protección contra incendios en 2026](https://drexmin.es/tendencias-tecnologicas-en-proteccion-contra-incendios-en-2026/)
-- [SFF Services — 5 tendencias en sistemas contra incendios para empresas en 2026](https://www.sffservicesperu.com/tendencias-en-sistemas-contra-incendios-para-empresas-en-2026/)
+> El riesgo central es que estos sesgos se combinan y refuerzan: los edificios que más necesitan protección temprana (antiguos, de bajos recursos, en regiones subrepresentadas en los datos) suelen ser precisamente los que reciben sistemas menos precisos, peor calibrados y menos actualizados —lo opuesto al objetivo original de "prevenir antes".
