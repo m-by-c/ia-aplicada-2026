@@ -1,1 +1,13 @@
+# Sesgos en sistemas de prevención y detección de incendios en edificios inteligentes
 
+| Tipo de sesgo | Dónde ocurre | Ejemplo en incendios en edificios inteligentes | Consecuencia |
+|---|---|---|---|
+| **Histórico** | En los datos usados para entrenar el sistema | Datos de incendios pasados provienen mayormente de edificios de regiones desarrolladas y normativas ya superadas | El sistema no reconoce bien riesgos de construcciones informales, otros materiales o climas |
+| **Representación** | En qué edificios se recogen los datos | Solo oficinas y centros comerciales de alto valor tienen sistemas instalados | Viviendas sociales o edificios antiguos quedan subrepresentados y peor protegidos |
+| **Medición** | En los sensores y proxies usados | Sensores de menor calidad o mal calibrados en instalaciones económicas | Subestimación sistemática del riesgo en edificios "no premium" |
+| **Agregación** | Al combinar datos de edificios distintos en un solo modelo | Un mismo modelo trata igual una cocina industrial y una oficina | Umbrales de alarma inadecuados para casos particulares |
+| **Aprendizaje** | En cómo el algoritmo optimiza su desempeño | El modelo prioriza reducir falsas alarmas en edificios con más historial de datos | Menor sensibilidad en edificios nuevos o poco monitoreados, aunque sean vulnerables |
+| **Evaluación** | En las pruebas de desempeño del sistema | Se evalúa en pilotos con edificios nuevos y bien mantenidos | No se detectan fallos en condiciones reales adversas (edificios antiguos, mal mantenimiento) |
+| **Despliegue** | Al implementar el sistema en el mundo real | Modelo entrenado para oficinas se usa en una fábrica; mantenimiento depende del presupuesto | Uso fuera de contexto y brecha de actualización entre edificios ricos y pobres |
+
+**Idea central:** los sesgos se refuerzan entre sí — los edificios que más necesitan protección temprana (antiguos, de bajos recursos, subrepresentados) suelen recibir los sistemas menos precisos y peor mantenidos.
