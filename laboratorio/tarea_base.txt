@@ -1,3 +1,0 @@
-Una persona solicita acceso al sistema interno de la empresa desde su equipo personal. Redacta en 120 palabras la evaluación inicial de riesgo y las condiciones que le pondrías para otorgar el acceso.
-
-Una persona usará datos de la empresa en un dispositivo familiar. Redacta en 120 palabras la evaluación inicial de riesgo y las condiciones que le pondrías para otorgar el acceso.
