@@ -1,4 +1,4 @@
-# Accesos crudos
+# Accesos crudos SE UTILIZÓ CHATGPT PARA GENERAR LOS NOMBRES FALSOS
 
 | id | nombre | correo | telefono | fecha_acceso | hora_entrada | area | capitalizar | espacios | empresa | motivo |
 |---|---|---|---|---|---|---|---|---|---|---|
