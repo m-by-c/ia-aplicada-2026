@@ -10,6 +10,8 @@
 | empresa | Generalizar | Tipo de empresa | Nombre exacto es un identificador indirecto por agrupar sectores |
 | motivo | Conservar | - | Categoría de actividad |
 
+
+
 | id | campo | problema | valor_original | accion |
 |---|---|---|---|---|
 | 3 | telefono | Ya venía vacío en los datos originales (dato faltante, no un error de captura) | (vacío) | Se mantuvo vacío |
