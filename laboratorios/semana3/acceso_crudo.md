@@ -1,3 +1,4 @@
+[acceso_crudo.md](https://github.com/user-attachments/files/32712581/acceso_crudo.md)
 id,id_persona,correo_enmascarado,semana,franja,area,tipo_empresa,motivo
 1,P001,l***@correo.com,SEMANA32,Mañana,Obra Norte,Constructora,Supervisión
 2,P002,c***@correo.com,SEMANA32,Mañana,Obra Norte,Constructora,Supervision
