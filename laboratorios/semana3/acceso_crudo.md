@@ -1,4 +1,4 @@
-[accesos_crudos.md](https://github.com/user-attachments/files/32712602/accesos_crudos.md)# Accesos crudos
+Accesos crudos
 
 | id | nombre | correo | minusculas | espacios | telefono | fecha_acceso | hora_entrada | area | capitalizar | espacios | empresa | motivo | capitalizar | espacios |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
