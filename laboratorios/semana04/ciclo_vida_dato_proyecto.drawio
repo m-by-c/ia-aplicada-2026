@@ -1,0 +1,110 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Ciclo de vida del dato">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Etapa 1: Captura -->
+        <mxCell id="e1" value="1. Captura" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e1t" value="Qué ocurre: El visitante llena el formulario en recepción (nombre, correo, telefono, area, motivo)&#10;Responsable: Recepcionista / guardia de acceso&#10;Control: Aviso de privacidad visible, consentimiento tácito, captura mínima" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="130" width="200" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- Etapa 2: Almacenamiento -->
+        <mxCell id="e2" value="2. Almacenamiento" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="300" y="80" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e2t" value="Qué ocurre: Los registros se guardan en una base de datos en la nube&#10;Responsable: Administrador de sistemas / proveedor de nube&#10;Control: Cifrado en reposo, acceso por rol, respaldo periódico" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="300" y="130" width="200" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- Etapa 3: Uso -->
+        <mxCell id="e3" value="3. Uso" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="560" y="80" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e3t" value="Qué ocurre: El analista revisa los registros y genera reportes de patrones de acceso&#10;Responsable: Analista de datos / jefe de seguridad&#10;Control: Uso limitado al fin declarado, log de quién consulta los datos" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="560" y="130" width="200" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- Etapa 4: Compartición -->
+        <mxCell id="e4" value="4. Compartición" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="820" y="80" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e4t" value="Qué ocurre: Confirmación por correo al visitante; datos seudonimizados/generalizados se envían a un modelo generativo para análisis de patrones&#10;Responsable: Analista de datos&#10;Control: Contrato con proveedores, anonimización antes de compartir, nunca se envía nombre/correo/telefono al modelo" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="820" y="130" width="200" height="130" as="geometry" />
+        </mxCell>
+
+        <!-- Etapa 5: Retención -->
+        <mxCell id="e5" value="5. Retención" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="80" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e5t" value="Qué ocurre: Los registros se conservan 12 meses según política interna&#10;Responsable: Oficial de cumplimiento / responsable de datos&#10;Control: Plazo definido en el aviso de privacidad, revisión semestral" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="130" width="200" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- Etapa 6: Eliminación -->
+        <mxCell id="e6" value="6. Eliminación" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="80" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e6t" value="Qué ocurre: Al cumplirse el plazo, se borran los registros de la base y los respaldos&#10;Responsable: Administrador de sistemas&#10;Control: Borrado seguro (sobrescritura), confirmación documentada en bitácora" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="130" width="200" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- Flechas principales entre etapas -->
+        <mxCell id="a1" style="html=1;endArrow=block;" edge="1" parent="1" source="e1" target="e2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a2" style="html=1;endArrow=block;" edge="1" parent="1" source="e2" target="e3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a3" style="html=1;endArrow=block;" edge="1" parent="1" source="e3" target="e4"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a4" style="html=1;endArrow=block;" edge="1" parent="1" source="e4" target="e5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a5" style="html=1;endArrow=block;" edge="1" parent="1" source="e5" target="e6"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Terceros con borde punteado -->
+        <mxCell id="t1" value="Tercero:&#10;Proveedor de nube" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="330" y="300" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="Tercero:&#10;Servicio de correo transaccional" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="800" y="300" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" value="Tercero:&#10;Modelo generativo (análisis de patrones)" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="960" y="300" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="at1" style="html=1;endArrow=block;dashed=1;" edge="1" parent="1" source="e2" target="t1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="at2" style="html=1;endArrow=block;dashed=1;" edge="1" parent="1" source="e4" target="t2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="at3" style="html=1;endArrow=block;dashed=1;" edge="1" parent="1" source="e4" target="t3"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Recorrido del dato de mayor riesgo (D1 - nombre) en rojo -->
+        <mxCell id="r1" value="Recorrido de D1 (nombre)" style="html=1;endArrow=block;strokeColor=#FF0000;strokeWidth=3;" edge="1" parent="1" source="e1" target="e2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="140" y="60" /><mxPoint x="400" y="60" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2" style="html=1;endArrow=block;strokeColor=#FF0000;strokeWidth=3;" edge="1" parent="1" source="e2" target="e3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="400" y="60" /><mxPoint x="660" y="60" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r3" style="html=1;endArrow=block;strokeColor=#FF0000;strokeWidth=3;" edge="1" parent="1" source="e3" target="e4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="660" y="60" /><mxPoint x="920" y="60" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r4" style="html=1;endArrow=block;strokeColor=#FF0000;strokeWidth=3;" edge="1" parent="1" source="e4" target="e5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="920" y="60" /><mxPoint x="1180" y="60" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r5" style="html=1;endArrow=block;strokeColor=#FF0000;strokeWidth=3;" edge="1" parent="1" source="e5" target="e6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="1180" y="60" /><mxPoint x="1440" y="60" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rnote" value="D1 (nombre) sale por primera vez del control de la organización en Almacenamiento, al vivir en la base de datos de un proveedor de nube externo. Control: cifrado en reposo + contrato de encargado de tratamiento (DPA)." style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#fde9d9;strokeColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="460" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
