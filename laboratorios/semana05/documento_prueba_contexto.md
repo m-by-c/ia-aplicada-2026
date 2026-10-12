@@ -1,0 +1,124 @@
+# Detección de incendios en edificios inteligentes
+
+## 1. Introducción
+
+La detección temprana es la medida que más tiempo regala a las personas durante un incendio: un fuego en un recinto cerrado puede pasar de una llama pequeña a condiciones insostenibles en pocos minutos, y cada minuto ganado en la alarma amplía la ventana de evacuación y de intervención.
+
+En un edificio inteligente, la detección deja de ser un sistema aislado que solo hace sonar una sirena. Los sensores se conectan al sistema de gestión del edificio (BMS), a los controles de acceso, al HVAC, a los elevadores y a la iluminación de emergencia, de modo que una sola señal puede desencadenar acciones coordinadas: liberar puertas, detener ventilación, llamar elevadores a planta baja y mostrar rutas de evacuación.
+
+Este documento resume las tecnologías de detección más usadas, su integración en edificios inteligentes, el papel de la analítica y la inteligencia artificial, y el marco normativo que las regula, con referencias internacionales y mexicanas. Es un texto de carácter informativo: el diseño de una instalación real debe hacerlo un profesional acreditado con las ediciones vigentes de las normas aplicables.
+
+## 2. El edificio inteligente y el riesgo de incendio
+
+Un edificio inteligente integra sistemas de control (energía, clima, seguridad, iluminación, transporte vertical) sobre una red de datos común y los gestiona de forma centralizada. Esa integración mejora la eficiencia, pero también modifica el perfil de riesgo de incendio.
+
+- **Más carga eléctrica y electrónica:** servidores, cuartos de telecomunicaciones, baterías de respaldo, cargadores de vehículos eléctricos y sistemas de almacenamiento de energía aumentan las fuentes de ignición por fallas eléctricas.
+- **Compartimentación y ventilación controlada:** la fachada sellada y el HVAC automatizado pueden propagar humo entre zonas si no se coordinan con la alarma.
+- **Ocupación variable:** el uso flexible de espacios (coworking, oficinas híbridas) dificulta mantener la información de ocupación y rutas actualizada.
+- **Dependencia de la red:** si la detección depende de una red compartida, una falla de comunicación o un ataque informático puede degradar la respuesta.
+
+Por eso el sistema de detección se diseña como un sistema de seguridad de vida: debe seguir funcionando de forma autónoma aunque falle el BMS o la red general, y el resto de la automatización se subordina a él, no al revés.
+
+## 3. Tecnologías de detección
+
+No existe un detector universal: cada tecnología responde a un fenómeno distinto del incendio (humo, calor, radiación o gases) y se elige según el uso del espacio, la altura del techo y el tipo de combustible esperado.
+
+| Tecnología | Qué detecta | Uso típico | Limitación principal |
+| --- | --- | --- | --- |
+| Humo fotoeléctrico | Partículas visibles dispersando luz | Oficinas, pasillos, habitaciones | Falsas alarmas por polvo o vapor |
+| Humo iónico | Partículas pequeñas de combustión rápida | Cada vez menos usado | Sensible a corrientes de aire; poco recomendado hoy |
+| Térmico (fijo o termovelocimétrico) | Temperatura alta o aumento rápido | Cocinas, cuartos de máquinas, garajes | Respuesta más lenta que el humo |
+| Llama (UV/IR) | Radiación de la llama | Hangares, almacenes de combustibles | Requiere línea de vista |
+| Aspiración (muestreo de aire) | Humo en concentraciones muy bajas | Centros de datos, techos altos, museos | Costo y diseño de tuberías más complejos |
+| Haz de humo lineal | Atenuación de un haz entre emisor y receptor | Atrios, naves, techos altos | Alineación y desplazamiento del edificio |
+| Gases (CO, CO₂, COV) | Productos de combustión o pirólisis | Garajes, cuartos de baterías | Sirve como apoyo, no sustituye al detector de humo |
+| Video-detección | Humo y llama por análisis de imagen | Grandes volúmenes, túneles | Depende de iluminación y calibración |
+| Cable sensor térmico lineal | Calor a lo largo de un cable | Túneles, charolas de cables, bandas | Localiza la zona, no el punto exacto |
+
+### Detección multicriterio y direccionable
+
+Los detectores multicriterio combinan varios sensores (por ejemplo humo óptico, calor y monóxido de carbono) y deciden con un algoritmo interno si hay un incendio real. Reducen las falsas alarmas sin sacrificar velocidad de respuesta. Los sistemas **direccionables** (analógicos) asignan una dirección a cada dispositivo, de modo que la central indica el punto exacto de la alarma y puede monitorear el estado de cada sensor, incluida su suciedad y su nivel de sensibilidad.
+
+## 4. Integración con BMS e IoT, analítica e inteligencia artificial
+
+La central de alarma contra incendios (FACP) suele ser el núcleo del sistema y se comunica con el BMS mediante protocolos abiertos como BACnet (ISO 16484-5), Modbus o, en algunos casos, interfaces propietarias. La norma práctica es que la información fluya de la central hacia el BMS para visualización y automatización, pero que las funciones críticas de seguridad de vida permanezcan en la central.
+
+Cuando se detecta un incendio, una secuencia típica en un edificio inteligente es:
+
+1. El detector direccionable envía la alarma a la central, que verifica la señal (por ejemplo, con confirmación de dos detectores o de un segundo criterio).
+2. La central activa sirenas, luces estroboscópicas y mensajes de voz en la zona afectada y las adyacentes.
+3. Se envía una señal al BMS para detener la recirculación de aire, cerrar compuertas cortafuego y activar el control de humos.
+4. El control de acceso libera puertas en rutas de evacuación y los elevadores se llaman a la planta de salida.
+5. El sistema notifica a la brigada, a la central de monitoreo y, según el caso, a los bomberos, indicando la ubicación exacta.
+
+### Sensores IoT y analítica
+
+Los sensores inalámbricos (por ejemplo, bajo estándares como EN 54-25 para componentes por radio) facilitan cubrir edificios existentes o espacios temporales sin cableado nuevo. Datos adicionales de temperatura, humedad, calidad del aire y ocupación permiten mantenimiento predictivo: detectar cámaras de detectores contaminadas, derivas de sensibilidad o baterías por agotarse antes de que causen una falla.
+
+### Inteligencia artificial
+
+La IA se aplica sobre todo en tres frentes: (1) **video-detección** de humo y llama con redes neuronales entrenadas con imágenes, (2) **fusión de sensores**, que cruza datos de humo, calor, gases y temperatura para distinguir un incendio real de vapor de cocina o polvo de obra, y (3) **predicción de fallas eléctricas** a partir de patrones anómalos de corriente y temperatura en tableros y cuartos técnicos. Su valor es complementario: la decisión de evacuación sigue apoyándose en detectores certificados, y los modelos de IA requieren validación, datos representativos y un modo de funcionamiento seguro si fallan.
+
+## 5. Normas y estándares
+
+La detección de incendios se rige por normas de diseño e instalación (dónde y cuántos detectores), normas de producto (cómo se ensayan y certifican los equipos) y normativa legal local. En la práctica se combinan las tres.
+
+| Ámbito | Norma | Qué regula |
+| --- | --- | --- |
+| Internacional (EE. UU.) | NFPA 72, Código Nacional de Alarmas y Señalización de Incendios | Diseño, instalación, pruebas y mantenimiento de sistemas de alarma y detección |
+| Internacional (EE. UU.) | NFPA 101, Código de Seguridad Humana | Medios de evacuación y requisitos de alarma según la ocupación |
+| Internacional (EE. UU.) | NFPA 90A y NFPA 92 | Control de HVAC y de humo, relevantes para la integración con el BMS |
+| Producto (EE. UU.) | UL 268 y UL 864 | Detectores de humo y unidades de control de alarma |
+| Europa | Serie EN 54 | Componentes: centrales (EN 54-2), detectores de humo (EN 54-7), térmicos (EN 54-5), aspiración (EN 54-20), radio (EN 54-25) |
+| Internacional | Serie ISO 7240 | Equivalente internacional de requisitos de sistemas de alarma y detección |
+| México | NOM-002-STPS-2010 | Prevención y protección contra incendios en centros de trabajo |
+| México | NOM-001-SEDE (instalaciones eléctricas) | Seguridad eléctrica, causa frecuente de ignición |
+| México | NOM-003-SEGOB y NOM-026-STPS | Señales y avisos de protección civil y colores de seguridad |
+| México | Reglamentos locales de construcción y protección civil | Requisitos por municipio o estado y dictámenes de la autoridad |
+
+En México no existe una norma nacional única equivalente a la NFPA 72 para el diseño de detección; en la práctica los proyectos suelen tomar NFPA como referencia técnica, y la autoridad local o el programa interno de protección civil determinan qué se exige. Conviene confirmar con el reglamento y la autoridad competente de cada localidad, así como las ediciones vigentes de cada norma, porque se actualizan periódicamente.
+
+## 6. Diseño, mantenimiento, falsas alarmas y ciberseguridad
+
+### Diseño y mantenimiento
+
+Un buen diseño parte de un análisis de riesgo: uso del espacio, carga de combustible, altura de techo, flujo de aire y tiempos de evacuación. De ahí se define la zonificación, el tipo de detector por área y la redundancia de rutas de comunicación y de energía (alimentación principal más baterías de respaldo). Después de la instalación, las pruebas periódicas, la limpieza de detectores y la verificación de la central son tan importantes como el diseño; un sistema sin mantenimiento puede fallar justo cuando se necesita.
+
+### Falsas alarmas
+
+Las falsas alarmas desgastan la confianza de los ocupantes y pueden llevar a que se desactiven equipos. Se reducen con detección multicriterio, ubicación correcta (lejos de cocinas, regaderas y salidas de aire), verificación por doble señal o por tiempo de espera, y supervisión de la suciedad de los sensores desde la central.
+
+### Ciberseguridad
+
+Al conectar la detección con redes IP, nubes de monitoreo y el BMS, aparece una superficie de ataque nueva. Las medidas básicas son segmentar la red de seguridad de vida respecto a la red de oficinas, usar autenticación y cifrado en las comunicaciones, mantener firmware actualizado y registrar los accesos. Marcos como IEC 62443 (seguridad en sistemas de control industrial) y las guías de NIST se usan como referencia, y las ediciones recientes de las normas de alarmas han comenzado a incorporar consideraciones de ciberseguridad. El principio rector es que un incidente informático nunca debe impedir que suene la alarma.
+
+## 7. Retos y tendencias
+
+- **Nuevos riesgos energéticos:** baterías de ion-litio, almacenamiento de energía y carga de vehículos eléctricos requieren detección de gases y de temperatura específica, además de los detectores de humo convencionales.
+- **Gemelos digitales:** modelos virtuales del edificio permiten simular la propagación de humo y optimizar la ubicación de detectores y las rutas de evacuación.
+- **Interoperabilidad:** conviene preferir protocolos abiertos para evitar depender de un solo fabricante y facilitar futuras ampliaciones.
+- **Edificios existentes:** la modernización con sensores inalámbricos reduce costos, pero exige validar cobertura, alcance de radio y vida útil de baterías.
+- **Datos y privacidad:** la video-detección y los sensores de ocupación deben gestionar los datos con criterios claros de uso y conservación.
+- **Formación del personal:** la tecnología solo es efectiva si los ocupantes y brigadistas conocen los procedimientos y se realizan simulacros periódicos.
+
+## 8. Conclusiones
+
+La detección de incendios en edificios inteligentes combina sensores especializados, comunicación digital y automatización para ganar tiempo en los primeros minutos de un incendio. La integración con el BMS multiplica la utilidad del sistema, pero obliga a diseñarlo con prioridad en la seguridad de vida: funcionamiento autónomo, redundancia y protección frente a fallas de red y ciberataques.
+
+Las normas (NFPA 72, EN 54, ISO 7240 y, en México, la NOM-002-STPS-2010 junto con los reglamentos locales) dan la base para un diseño correcto, mientras que la analítica y la inteligencia artificial aportan mantenimiento predictivo y menos falsas alarmas. La clave es usar la tecnología como complemento de detectores certificados, un buen mantenimiento y personas capacitadas.
+
+## 9. Referencias
+
+Las normas se citan por su título y número, sin edición, y sin consulta en línea durante la redacción: verifique la edición vigente en el organismo emisor antes de usarlas en un proyecto.
+
+- NFPA 72, *National Fire Alarm and Signaling Code*. National Fire Protection Association.
+- NFPA 101, *Life Safety Code*. National Fire Protection Association.
+- NFPA 90A, *Standard for the Installation of Air-Conditioning and Ventilating Systems*, y NFPA 92, *Standard for Smoke Control Systems*.
+- UL 268, *Smoke Detectors for Fire Alarm Systems*, y UL 864, *Control Units and Accessories for Fire Alarm Systems*. UL Standards.
+- EN 54 (serie), *Fire detection and fire alarm systems*. Comité Europeo de Normalización (CEN).
+- ISO 7240 (serie), *Fire detection and alarm systems*. Organización Internacional de Normalización.
+- ISO 16484-5, *Building automation and control systems: Data communication protocol (BACnet)*.
+- IEC 62443 (serie), *Security for industrial automation and control systems*.
+- NOM-002-STPS-2010, *Condiciones de seguridad: prevención y protección contra incendios en los centros de trabajo*. Secretaría del Trabajo y Previsión Social.
+- NOM-001-SEDE, *Instalaciones eléctricas (utilización)*. Secretaría de Energía.
+- NOM-003-SEGOB, *Señales y avisos para protección civil*, y NOM-026-STPS, *Colores y señales de seguridad e higiene*.
