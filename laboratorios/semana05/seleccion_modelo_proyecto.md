@@ -8,7 +8,9 @@ Lista los modelos que probaste en este laboratorio y en la semana 1 (ChatGPT, Ge
 
 -Tokens de mi documento de referencia: [3,900]. 
 
--Caracteres por token en español: [9]. Caracteres por token en inglés: [7] 
+-Caracteres por token en español: [9].
+
+-Caracteres por token en inglés: [7] 
 
 -Implicación para mi proyecto: [En español se utilizaron más tokens y más caracteres, mientras que en inglés fue lo contrario. Esto afecta mi proyecto de manera en que la información los modelos de IA la procese sin preocuparse por el límite (la ventana) sea menor en inglés, lo cual deja en español una gran desventaja.
 
