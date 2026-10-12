@@ -1,3 +1,5 @@
+Se ocultó el código en la sección de IA y en el primer párrafo
+
 # Detección de incendios en edificios inteligentes
 
 ## 1. Introducción
