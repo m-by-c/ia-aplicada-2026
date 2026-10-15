@@ -1,4 +1,4 @@
-(ve## Modelo y configuración
+## Modelo y configuración
 
 - Modelo: [ChatGPT, Claude y Gemini]
 
