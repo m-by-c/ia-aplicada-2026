@@ -51,13 +51,4 @@ Si el volumen de datos crece o necesitas un punto de recuperación más robusto,
 
 *   **Configuración sugerida:** Configura el NAS con **RAID 1** (espejo) para tolerancia a fallos. Instala una VPN (como **ZeroTier** o **OpenVPN**) en el NAS. De esta forma, tú y el cliente pueden acceder a los archivos y respaldos de forma remota y segura, como si estuvieran en la red local. Los resultados de implementaciones similares muestran una latencia baja y alta disponibilidad para acceso remoto .
 
-###  Comparativa Rápida de Herramientas
-
-| Herramienta | Mejor para... | Complejidad | Seguridad |
-| :--- | :--- | :--- | :--- |
-| **Tailscale/Taildrive** | Compartir carpetas puntuales ya mismo | Muy Baja | Alta (WireGuard) |
-| **Syncthing/Verysync** | Sincronización continua P2P | Baja | Alta (AES-256) |
-| **Mini-NAS + VPN** | Almacenamiento centralizado y respaldos | Media | Alta (RAID + VPN) |
-| **RcloneView** | Respaldos cifrados en la nube | Media | Alta (Cifrado lado cliente) |
-
-**Recomendación inmediata:** Empieza instalando **Tailscale** en tu equipo, en el del cliente y en el de tu compañero. Configura una carpeta compartida con permisos de solo lectura para el cliente si es necesario. Esto te dará una vía de comunicación segura en menos de 15 minutos mientras planificas la solución a largo plazo.]
+###  Comparativa Rápida de Herramientas]
