@@ -15,3 +15,46 @@ Obtener un párrafo de unas 150 palabras sobre la mitigación del phishing, con 
 
 
 [Redacta un párrafo de 150 palabras sobre la regulación de protección de datos y ciberseguridad en México. Incluye: el nombre exacto de al menos dos leyes o normas con su fecha de publicación en el Diario Oficial de la Federación, una cifra estadística sobre incidentes de ciberseguridad en México con su fuente y dos referencias bibliográficas completas en formato APA 7.]
+
+Resultado Obtenido
+
+La mitigación del *phishing* se fundamenta en marcos de seguridad globales como los Controles de Seguridad Críticos del CIS y las directrices del NIST. La publicación **CIS Controls v8.1** (publicada en junio de 2024 por el *Center for Internet Security*) aborda el riesgo de suplantación principalmente en el Control 14 (Concienciación en Seguridad) y el Control 09 (Defensas contra Correos y Navegadores). Por su parte, el marco **NIST SP 800-53 Rev. 5** (con actualizaciones continuas en su catálogo de controles desde septiembre de 2020) especifica medidas clave como AT-2 (Capacitación en Seguridad) y SI-8 (Protección de Spam y Filtro de Correo). La implementación de estas normas resulta crítica ante la escala del problema: según el informe anual de ciberdelincuencia del *FBI Internet Crime Complaint Center* (IC3), en 2025 se registraron **191 561 quejas** por *phishing* y *spoofing* solo en EE. UU., consolidándose como el vector de ataque más reportado. Asimismo, el estudio *Cost of a Data Breach Report 2025* de IBM señala que las filtraciones originadas por *phishing* representan un costo promedio de **4.8 millones de dólares** por incidente para las organizaciones.
+
+---
+
+### Referencias (Formato APA 7ª edición)
+
+Gemini:
+
+* Center for Internet Security. (2024, junio). *CIS Critical Security Controls version 8.1*. [https://www.cisecurity.org/controls](https://www.cisecurity.org/controls)
+* Federal Bureau of Investigation. (2026). *Internet Crime Report 2025*. Internet Crime Complaint Center (IC3). [https://www.ic3.gov/](https://www.ic3.gov/)
+* IBM Security. (2025). *Cost of a Data Breach Report 2025*. IBM Corporation. [https://www.ibm.com/reports/data-breach](https://www.ibm.com/reports/data-breach)
+* National Institute of Standards and Technology. (2020, septiembre). *Security and privacy controls for information systems and organizations* (NIST Special Publication 800-53, Revision 5). U.S. Department of Commerce. [https://doi.org/10.6028/NIST.SP.800-53r5](https://doi.org/10.6028/NIST.SP.800-53r5)
+
+Claude:
+
+La prevención del phishing se apoya en marcos reconocidos. El Center for Internet Security (CIS, 2024) actualizó sus controles a la versión 8.1, donde el Control 9 busca mejorar la protección y detección de amenazas por correo y web y el Control 14 (salvaguarda 14.2) capacita al personal para reconocer ataques de ingeniería social. Por su parte, el NIST (Rose et al., 2019) publicó en febrero de 2019 la Publicación Especial SP 800-177 Rev. 1, "Trustworthy Email", que recomienda mecanismos de autenticación SMTP y DNS, además de MTA-STS y TLS Reporting, para frenar correos maliciosos. La urgencia es clara: el APWG (2026) registró 971,181 ataques de phishing en el primer trimestre de 2026, un aumento de 13.8 % frente a los 853,244 del cuarto trimestre de 2025, y 3.8 millones durante todo 2025.
+
+**Referencias (APA 7)**
+
+Anti-Phishing Working Group. (2026, 21 de mayo). *Phishing activity trends report: 1st quarter 2026*. https://docs.apwg.org/reports/apwg_trends_report_q1_2026.pdf
+
+Center for Internet Security. (2024). *CIS Critical Security Controls* (Versión 8.1). https://www.cisecurity.org/controls/cis-controls-list/
+
+Rose, S., Nightingale, J., Garfinkel, S., & Chandramouli, R. (2019). *Trustworthy email* (NIST Special Publication 800-177 Rev. 1). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.SP.800-177r1
+
+Pediste dos fuentes, pero usé tres: CIS y NIST para las normas, y el APWG para las cifras de ataques, que no vienen en ninguno de los otros dos. Si tu profesor exige solo dos, puedes quitar las cifras del APWG o citar solo CIS y NIST con datos de otra fuente. La fecha exacta de publicación del CIS v8.1 no la pude confirmar con certeza; las fuentes solo indican 2024, así que verifícala en el sitio del CIS antes de entregar.
+
+ChatGPT:
+
+La CIS (Center for Internet Security) y el NIST (National Institute of Standards and Technology) establecen buenas prácticas para fortalecer la ciberseguridad y prevenir el phishing o suplantación de identidad mediante correos y sitios web fraudulentos. Los CIS Critical Security Controls v8, publicados en mayo de 2021, recomiendan proteger el correo electrónico y los navegadores, controlar el acceso y capacitar a los usuarios para reconocer amenazas. Por su parte, la norma de orientación NIST SP 800-50 Rev. 1, publicada el 12 de septiembre de 2024, promueve programas continuos de formación en seguridad y privacidad, adaptados a los riesgos de cada organización. La importancia de estas medidas se refleja en el informe del FBI: durante 2024, el IC3 registró 193,407 denuncias de phishing/spoofing, una de las categorías de ciberdelitos más reportadas. Para prevenir estos ataques, las organizaciones deben implementar autenticación multifactor, filtros antispam, simulaciones de phishing, actualizaciones periódicas y procedimientos para reportar mensajes sospechosos (FBI, 2025; NIST, 2024).
+
+## Referencias en formato APA 7
+
+1\. Center for Internet Security. (2021, 18 de mayo). CIS Critical Security Controls v8. [https://www.cisecurity.org/insights/white-papers/cis-controls-v8](https://www.cisecurity.org/insights/white-papers/cis-controls-v8)
+
+2\. National Institute of Standards and Technology. (2024, 12 de septiembre). Building a Cybersecurity and Privacy Learning Program (NIST SP 800-50 Rev. 1). [https://doi.org/10.6028/NIST.SP.800-50r1](https://doi.org/10.6028/NIST.SP.800-50r1)
+
+Fuente de las cifras de ataques: Federal Bureau of Investigation. (2025, 23 de abril). FBI releases annual Internet crime report. [https://www.fbi.gov/news/press-releases/fbi-releases-annual-internet-crime-report](https://www.fbi.gov/news/press-releases/fbi-releases-annual-internet-crime-report)
+
+Nota: Las cifras corresponden a denuncias registradas en Estados Unidos, no al total mundial de ataques. Las publicaciones CIS y NIST son marcos de buenas prácticas y orientación técnica, respectivamente; no son, por sí mismas, leyes universales de cumplimiento obligatorio.
