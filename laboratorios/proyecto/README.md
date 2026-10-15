@@ -4,8 +4,8 @@
 
 |---|---|---|---|---|
 
-| P01 | Laboratorio | Gemini | P01_verificación_de_respuestas.md |
+| P01 | Laboratorio | Gemini, Claude y ChatGPT | P01_verificación_de_respuestas.md |
 
-| P02 | Laboratorio | ChatGPT | P01_verificación_de_respuestas.md |
+| P02 | Laboratorio | Gemini, DeepSeek y ChatGPT | P02_problemática_de_ingeniería.md |
 
-| P03 | Laboratorio | Claude | P01_verificación_de_respuestas.md |
+| P03 | Proyecto | Gemini, Claude y ChatGPT | P03_Detección_de_Incendios_y_normas.md |
