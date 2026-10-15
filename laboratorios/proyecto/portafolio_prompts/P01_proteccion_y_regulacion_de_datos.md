@@ -66,13 +66,13 @@ Nota: Las cifras corresponden a denuncias registradas en Estados Unidos, no al t
 | Gemini: NIST SP 800-53 Rev. 5 con controles AT-2 y SI-8 (septiembre de 2020) | CIS lista de controles: https://www.cisecurity.org/controls/cis-controls-list |
 | Gemini: IC3 registró 191 561 quejas de phishing/spoofing en 2025 | NIST SP 800-53 Rev. 5: https://csrc.nist.gov/pubs/sp/800/53/r5/final |
 | Gemini: IBM, costo promedio de 4.8 millones de dólares por filtración originada por phishing |UpGuard AT-2 (secundaria): https://www.upguard.com/compliance/nist-sp-800-53/at/at-2| |
-| Claude: CIS v8.1, Control 9 y Control 14 (salvaguarda 14.2) | | |
-| Claude: NIST SP 800-177 Rev. 1 "Trustworthy Email" publicado en febrero de 2019 | | |
-| Claude: APWG, 971,181 ataques en el 1T 2026 (+13.8 % frente a 853,244 del 4T 2025) | | |
-| Claude: APWG, 3.8 millones de ataques durante 2025 | | |
-| ChatGPT: CIS Controls v8 publicados en mayo de 2021 | | |
-| ChatGPT: NIST SP 800-50 Rev. 1 publicada el 12 de septiembre de 2024 | | |
-| ChatGPT: IC3 registró 193,407 denuncias de phishing/spoofing en 2024 | | |
+| Claude: CIS v8.1, Control 9 y Control 14 (salvaguarda 14.2) |StigViewer SI-8 (secundaria): https://www.stigviewer.com/controls/nist-800-53/SI-8| |
+| Claude: NIST SP 800-177 Rev. 1 "Trustworthy Email" publicado en febrero de 2019 | IC3 informe 2025: https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf |
+| Claude: APWG, 971,181 ataques en el 1T 2026 (+13.8 % frente a 853,244 del 4T 2025) |IC3 informe 2025: https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf| |
+| Claude: APWG, 3.8 millones de ataques durante 2025 |Abnormal AI resumen del informe IBM 2025 (secundaria): https://abnormal.ai/blog/ibm-cost-of-a-data-breach-2025| |
+| ChatGPT: CIS Controls v8 publicados en mayo de 2021 |CIS white paper v8.1: https://www.cisecurity.org/insights/white-papers/cis-critical-security-controls-v8-1| |
+| ChatGPT: NIST SP 800-50 Rev. 1 publicada el 12 de septiembre de 2024 |IC3 informe 2025: https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf| |
+| ChatGPT: IC3 registró 193,407 denuncias de phishing/spoofing en 2024 |IBM página del informe: https://www.ibm.com/reports/data-breach| |
 
 Tasa de error de esta respuesta: [13.2]%
 
