@@ -1,10 +1,10 @@
 ## Modelo y configuración
 
-- Modelo: [ChatGPT / Gemini/ Deepseek ]
+- Modelo: ChatGPT, Gemini y Deepseek
 
-- Temperatura: [Determinada]
+- Temperatura: Por defecto
 
-- Fecha de ejecución: [2026-09-06]
+- Fecha de ejecución: 2026-09-06
 
 ## Prompt (versión v1)
 
