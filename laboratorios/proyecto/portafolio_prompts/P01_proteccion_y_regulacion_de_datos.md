@@ -65,7 +65,7 @@ Nota: Las cifras corresponden a denuncias registradas en Estados Unidos, no al t
 | Gemini: CIS Controls v8.1 publicado en junio de 2024 |CIS white paper v8.1: https://www.cisecurity.org/insights/white-papers/cis-critical-security-controls-v8-1| |
 | Gemini: NIST SP 800-53 Rev. 5 con controles AT-2 y SI-8 (septiembre de 2020) | CIS lista de controles: https://www.cisecurity.org/controls/cis-controls-list |
 | Gemini: IC3 registró 191 561 quejas de phishing/spoofing en 2025 | NIST SP 800-53 Rev. 5: https://csrc.nist.gov/pubs/sp/800/53/r5/final |
-| Gemini: IBM, costo promedio de 4.8 millones de dólares por filtración originada por phishing | | |
+| Gemini: IBM, costo promedio de 4.8 millones de dólares por filtración originada por phishing |UpGuard AT-2 (secundaria): https://www.upguard.com/compliance/nist-sp-800-53/at/at-2| |
 | Claude: CIS v8.1, Control 9 y Control 14 (salvaguarda 14.2) | | |
 | Claude: NIST SP 800-177 Rev. 1 "Trustworthy Email" publicado en febrero de 2019 | | |
 | Claude: APWG, 971,181 ataques en el 1T 2026 (+13.8 % frente a 853,244 del 4T 2025) | | |
