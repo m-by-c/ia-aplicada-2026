@@ -41,7 +41,6 @@ Texto a clasificar:
 - {CATEGORIAS}: lista cerrada de tipos. Ejemplo: "acceso no autorizado, phishing, malware, pérdida de dispositivo, otro".
 - {SEVERIDADES}: escala cerrada. Ejemplo: "baja, media, alta".
 - {ENTRADA}: el texto libre del usuario, sin editar.
-- Modelo probado: [COMPLETAR: ChatGPT / Gemini / Deepseek y versión].
-- Puntaje obtenido: [COMPLETAR] / 18 en las tres entradas; entrada de robustez: [COMPLETAR] / 6.
-- Limitaciones conocidas: [COMPLETAR con lo que observaste; por ejemplo, el ejemplo few-shot puede sesgar hacia "phishing", y el texto de "Análisis" antes de la tabla impide copiar la respuesta directo a un sistema].
-- Úsala en una conversación nueva por cada reporte.
+- Modelo probado: [Claude].
+- Puntaje obtenido: [12] / 18 en las tres entradas; entrada de robustez: [COMPLETAR] / 6.
+- Limitaciones conocidas: [ el ejemplo few-shot puede sesgar hacia "phishing", y el texto de "Análisis" antes de la tabla impide copiar la respuesta directo a un sistema].
