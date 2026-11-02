@@ -26,9 +26,9 @@ Decisiones de alcance pendientes:
 
 4. Requisitos no funcionales
    
-• RNF-1 – Privacidad: El sistema no deberá almacenar ni divulgar direcciones ni datos personales de los inquilinos [DATO PENDIENTE: ajustar a la política del Avance 4].
-• RNF-2 – Confiabilidad: El sistema deberá alcanzar una precisión mínima de [DATO PENDIENTE: porcentaje de precisión requerido].
-• RNF-3 – Disponibilidad: El sistema deberá estar disponible al menos [DATO PENDIENTE: porcentaje de disponibilidad esperado] del tiempo.
+• RNF-1 – Privacidad: El sistema no deberá almacenar ni divulgar direcciones ni datos personales de los inquilinos.
+• RNF-2 – Confiabilidad: El sistema deberá alcanzar una precisión mínima de 1 minuto.
+• RNF-3 – Disponibilidad: El sistema deberá estar disponible al menos del tiempo designado.
 
 Declaración de generación asistida
 
