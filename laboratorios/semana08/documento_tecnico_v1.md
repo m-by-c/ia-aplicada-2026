@@ -4,7 +4,7 @@ Proyecto: Detección de incendios en edificios inteligentes · Sección: Introdu
 
 1. Introducción
    
-El proyecto Detección de incendios en edificios inteligentes tiene como objetivo contribuir a la detección temprana de humo mediante inteligencia artificial de tipo [DATO PENDIENTE: tipo de IA según la ficha del Avance 1]. La solución está dirigida a los inquilinos de edificios inteligentes y emite una alerta ante una detección de humo en un tiempo máximo de [DATO PENDIENTE: tiempo máximo de alerta]. El sistema no almacena direcciones ni datos personales, conforme a la política de datos del proyecto [DATO PENDIENTE: confirmar redacción exacta del Avance 4].
+El proyecto Detección de incendios en edificios inteligentes tiene como objetivo contribuir a la detección temprana de humo mediante inteligencia artificial de tipo. La solución está dirigida a los inquilinos de edificios inteligentes y emite una alerta ante una detección de humo en un tiempo máximo de 1 minuto. El sistema no almacena direcciones ni datos personales, conforme a la política de datos del proyecto.
 
 3. Alcance
 Incluye:
