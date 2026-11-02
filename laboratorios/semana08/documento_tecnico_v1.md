@@ -23,7 +23,7 @@ Decisiones de alcance pendientes:
 3. RF-3: El sistema deberá emitir la alerta en un máximo de 1 minuto.
 4. RF-4: El sistema deberá notificar a los inquilinos mediante un sonido.
 5. RF-5: El sistema no deberá de revelar datos personales.
-6. 
+
 4. Requisitos no funcionales
    
 • RNF-1 – Privacidad: El sistema no deberá almacenar ni divulgar direcciones ni datos personales de los inquilinos [DATO PENDIENTE: ajustar a la política del Avance 4].
